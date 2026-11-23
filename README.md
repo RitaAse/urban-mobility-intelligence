@@ -251,11 +251,109 @@ With real operational data, these insights could help companies investigate wher
 
 Trip counts alone do not establish actual vehicle availability, so further operational data would be required before making fleet decisions.
 
-### C. High Transaction Values Require Context
 
-The median transaction value was €16.83, while the maximum was €459.52.
+### C. Transaction and Financial Analysis
 
-Airport-originating journeys had an average transaction value of €28.98, higher than the overall average of €20.96, alongside longer journey distances and durations.
+**Business question:** How do transaction values differ
+across journeys and service categories, and what can
+transportation companies learn from these differences?
+
+#### 1. Understanding Transaction Values
+
+The analysis examined transaction amounts across
+120,000 simulated journeys.
+
+| Financial Indicator | Value |
+|---|---:|
+| Average transaction | €20.96 |
+| Median transaction | €16.83 |
+| 95th percentile | €47.76 |
+| 99th percentile | €78.66 |
+| Highest transaction | €459.52 |
+
+**Key findings**
+
+- The average transaction value was higher than the
+  median, indicating that larger transactions pulled
+  the average upward.
+- Most transaction values were considerably lower
+  than the maximum recorded amount.
+- The highest transaction was €459.52, but a high
+  amount alone does not indicate suspicious activity.
+
+**Business implications**
+
+Understanding the distribution of transaction values
+could help transportation companies establish typical
+transaction ranges, monitor changes in pricing patterns,
+and identify records that deserve closer examination.
+
+However, unusually high amounts should be considered
+alongside journey distance, duration, and service
+characteristics before drawing conclusions.
+
+#### 2. Transaction Patterns Across Business Segments
+
+![Transaction activity by business segment](Visuals/financial_segments.png)
+
+*Figure 6: Trip volumes across payment methods, service
+types, and booking channels.*
+
+**Key findings**
+
+- Mobile App bookings accounted for 75,289 journeys,
+  making them the most frequently used booking channel.
+- Card payments accounted for 74,304 journeys.
+- Standard service represented 105,608 journeys,
+  approximately 88% of the dataset.
+- Average transaction values were relatively similar
+  across the major payment methods, service types,
+  and booking channels.
+
+**Business implications**
+
+Segment-level analysis could help transportation
+companies understand how customers use different
+booking channels, payment methods, and services.
+
+This information could support service planning,
+channel monitoring, and investigations into changes
+in transaction behaviour.
+
+Importantly, the chart shows trip volumes, not
+financial revenue or profitability.
+
+#### 3. Why Transaction Context Matters
+
+Airport-originating journeys had an average transaction
+value of €28.98, compared with an overall average of
+€20.96.
+
+These journeys also tended to cover longer distances
+and take more time.
+
+This illustrates why comparing transaction amounts
+without considering journey characteristics can be
+misleading.
+
+A higher fare may reflect a longer journey rather
+than unusual pricing.
+
+#### Overall Business Insight
+
+Financial analysis helps transportation companies
+understand more than how much passengers pay.
+
+By examining transaction distributions, booking
+channels, payment methods, and journey characteristics
+together, companies could establish meaningful
+financial benchmarks and investigate unusual activity
+more effectively.
+
+These findings illustrate potential business
+applications using synthetic data. They do not
+demonstrate actual revenue growth, cost savings,
+or fraud prevention.
 
 **Potential business value:**
 
