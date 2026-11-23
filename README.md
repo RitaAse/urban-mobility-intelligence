@@ -271,15 +271,45 @@ The analysis examined transaction amounts across
 | 99th percentile | €78.66 |
 | Highest transaction | €459.52 |
 
-**Key findings**
 
-- The average transaction value was higher than the
-  median, indicating that larger transactions pulled
-  the average upward.
-- Most transaction values were considerably lower
-  than the maximum recorded amount.
-- The highest transaction was €459.52, but a high
-  amount alone does not indicate suspicious activity.
+#### Transaction Value Distribution
+
+**Business question:** What transaction ranges are most
+common, and how does trip frequency change as
+transaction values increase?
+
+![Transaction value distribution](Visuals/transaction_distribution.png)
+
+*Figure: Distribution of transaction values across
+120,000 simulated journeys, grouped into €5 intervals.*
+
+**Key Findings**
+
+- **€10–€15 was the most frequent transaction range**,
+  accounting for 32,054 journeys (26.71% of all trips).
+- **61.94% of journeys had transaction values between
+  €5 and €20**, showing a strong concentration in
+  lower transaction ranges.
+- Trip frequency generally declined as transaction
+  values increased beyond €15.
+- **Only 523 journeys (0.44%) had transaction values
+  of €100 or more**, indicating that high-value
+  transactions were relatively uncommon.
+
+**Business Implications**
+
+Understanding transaction distributions could help
+transportation companies identify common pricing
+patterns and monitor changes in transaction behaviour.
+
+The relatively small number of high-value journeys
+also highlights an opportunity for targeted transaction
+reviews.
+
+However, uncommon transactions are not necessarily
+problematic. Their values should be considered
+alongside journey distance, duration, route, and
+service characteristics before drawing conclusions.
 
 **Business implications**
 
@@ -291,6 +321,47 @@ and identify records that deserve closer examination.
 However, unusually high amounts should be considered
 alongside journey distance, duration, and service
 characteristics before drawing conclusions.
+
+
+
+#### Factors Associated with Higher Transaction Values
+
+To better understand why some journeys had higher transaction
+values, the analysis examined journey distance, service type,
+and airport involvement.
+
+![Average transaction value by journey distance](Visuals/airport_distance_comparison.png)
+
+*Average transaction values for airport-related and non-airport
+journeys across five distance categories.*
+
+**Key Findings**
+
+- Average transaction values increased consistently with
+  journey distance, from €12.80 for journeys under 5 km
+  to €76.71 for journeys of 20 km or more.
+- Airport-related journeys averaged €28.98 compared with
+  €19.69 for non-airport journeys, approximately 47% higher.
+- Airport-related journeys also recorded higher average
+  transaction values within all five distance bands.
+- Service type showed much smaller differences. Premium
+  journeys averaged €21.13 compared with €20.95 for
+  Standard journeys.
+- Journeys under 10 km accounted for 85.91% of trips and
+  68.55% of total transaction value.
+
+**Business Implications**
+
+Journey distance and airport involvement were more
+informative than service type when examining transaction
+values in this simulated dataset.
+
+These findings could help transportation operators
+understand transaction patterns and provide useful
+context when reviewing unusually high-value journeys.
+
+The observed relationships are associations and do not
+establish the causes of pricing differences.
 
 #### 2. Transaction Patterns Across Business Segments
 
