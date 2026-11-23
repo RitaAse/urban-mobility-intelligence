@@ -31,6 +31,18 @@ For example:
 
 The project combines transportation analytics with anomaly detection to demonstrate how trip and transaction data can support operational planning, transaction monitoring, and more informed decision-making.
 
+
+## Databricks Workflow Demo
+
+This project was developed in **Databricks Free Edition**, using PySpark and Delta Lake for data preparation, feature engineering and exploratory analysis, alongside Python and scikit-learn for anomaly detection.
+
+The short screen recording provides a look at the Databricks workspace, including journey analysis, feature engineering and anomaly detection.
+
+**[▶ Watch the 35-second Databricks Demo](Demo/databricks-workflow-demo-comp.mp4)**
+
+The complete workflow and results are documented in the [`Notebooks/`](Notebooks/) folder.
+
+
 ## 2. Business Problem
 
 Transportation operators must balance service efficiency, customer experience, and financial oversight.
