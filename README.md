@@ -321,19 +321,6 @@ problematic. Their values should be considered
 alongside journey distance, duration, route, and
 service characteristics before drawing conclusions.
 
-**Business implications**
-
-Understanding the distribution of transaction values
-could help transportation companies establish typical
-transaction ranges, monitor changes in pricing patterns,
-and identify records that deserve closer examination.
-
-However, unusually high amounts should be considered
-alongside journey distance, duration, and service
-characteristics before drawing conclusions.
-
-
-
 #### Factors Associated with Higher Transaction Values
 
 To better understand why some journeys had higher transaction
@@ -559,21 +546,45 @@ The project does not establish cost savings, fraud reduction, improved customer 
 | scikit-learn | Building the Isolation Forest model |
 | Matplotlib | Creating charts and visual summaries |
 
+
 ## 9. Project Structure
 
 ```text
 urban-mobility-intelligence/
-├── README.md
-├── requirements.txt
-├── notebooks/
+│
+├── Notebooks/
 │   ├── 01_Data_Ingestion_and_Inspection.ipynb
 │   ├── 02_Exploratory_Data_Analysis.ipynb
 │   ├── 03_Feature_Engineering.ipynb
 │   └── 04_Anomaly_Detection_and_Evaluation.ipynb
-└── visuals/
-    ├── model_performance.png
-    └── scenario_recall.png
+│
+├── Visuals/
+│   ├── hourly_trip_activity.png
+│   ├── hourly_journey_speed.png
+│   ├── top_pickup_locations.png
+│   ├── top_15_routes.png
+│   ├── origin_destination_heatmap.png
+│   ├── transaction_distribution.png
+│   ├── financial_segments.png
+│   ├── airport_distance_comparison.png
+│   ├── model_performance.png
+│   └── scenario-recall.png
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
+
+### Notebook Guide
+
+| Notebook | Description |
+|---|---|
+| 01 — Data Ingestion and Inspection | Load, inspect, and validate the source data |
+| 02 — Exploratory Data Analysis | Investigate travel patterns, routes, and transaction behaviour |
+| 03 — Feature Engineering | Prepare journey and contextual measurements |
+| 04 — Anomaly Detection and Evaluation | Compare detection methods and investigate their performance |
+
 
 ### Notebook Guide
 
