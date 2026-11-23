@@ -290,7 +290,7 @@ transaction values increase?
 
 ![Transaction value distribution](Visuals/transaction_distribution.png)
 
-*Figure: Distribution of transaction values across
+*Figure 6: Distribution of transaction values across
 120,000 simulated journeys, grouped into €5 intervals.*
 
 **Key Findings**
@@ -329,7 +329,7 @@ and airport involvement.
 
 ![Average transaction value by journey distance](Visuals/airport_distance_comparison.png)
 
-*Average transaction values for airport-related and non-airport
+*Figure 7: Average transaction values for airport-related and non-airport
 journeys across five distance categories.*
 
 **Key Findings**
@@ -364,7 +364,7 @@ establish the causes of pricing differences.
 
 ![Transaction activity by business segment](Visuals/financial_segments.png)
 
-*Figure 6: Trip volumes across payment methods, service
+*Figure 8: Trip volumes across payment methods, service
 types, and booking channels.*
 
 **Key findings**
@@ -470,7 +470,7 @@ precision, recall, and F1-score.
 
 ![Anomaly detection model performance comparison](Visuals/model_performance.png)
 
-*Figure 1: Performance comparison of the anomaly detection methods.*
+*Figure 9: Performance comparison of the anomaly detection methods.*
 
 
 Isolation Forest performed slightly better at the selected alert threshold.
@@ -494,7 +494,7 @@ particularly challenging for the contextual rules.
 
 ![Detection performance by unusual trip scenario](Visuals/scenario-recall.png)
 
-*Figure 2: Percentage of unusual scenarios detected by each method.*
+*Figure 10: Percentage of unusual scenarios detected by each method.*
 
 These findings show why overall model performance alone
 is not enough. A method may perform reasonably well
@@ -584,17 +584,6 @@ urban-mobility-intelligence/
 | 02 — Exploratory Data Analysis | Investigate travel patterns, routes, and transaction behaviour |
 | 03 — Feature Engineering | Prepare journey and contextual measurements |
 | 04 — Anomaly Detection and Evaluation | Compare detection methods and investigate their performance |
-
-
-### Notebook Guide
-
-| Notebook | Description |
-|---|---|
-| 01 — Data Ingestion and Inspection | Load, inspect, and validate the source data |
-| 02 — Exploratory Data Analysis | Investigate travel patterns, routes, and transaction behaviour |
-| 03 — Feature Engineering | Prepare journey and contextual measurements |
-| 04 — Anomaly Detection and Evaluation | Compare detection methods and investigate their performance |
-
 
 ## 10. Data Availability and Reproducibility
 
