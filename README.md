@@ -2,7 +2,17 @@
 # Urban Mobility Intelligence
 ### Transportation Analytics and Anomaly Detection
 
-**Tools:** Python | PySpark | Databricks | Delta Lake | scikit-learn | Pandas | Matplotlib
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta_Lake-0A7B83?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+
 
 ## 1. Project Overview
 
@@ -574,6 +584,7 @@ urban-mobility-intelligence/
 | 03 — Feature Engineering | Prepare journey and contextual measurements |
 | 04 — Anomaly Detection and Evaluation | Compare detection methods and investigate their performance |
 
+
 ## 10. Data Availability and Reproducibility
 
 The dataset was synthetically generated for this project and contains no real passenger or transaction records.
@@ -600,10 +611,24 @@ Reproducing the numerical results requires access to the original dataset or a c
 
 Urban Mobility Intelligence demonstrates how transportation data can be used for more than reporting journey counts and transaction totals.
 
-By combining operational analysis with contextual anomaly detection, the project explores how organizations could better understand travel activity, investigate unusual behaviour, and make more informed decisions about where to focus their attention.
+The exploratory analysis revealed differences in journey efficiency across travel hours, identified frequently used locations and routes, and showed how transaction values varied with journey distance and airport involvement.
 
-The most important finding is that effective monitoring is not simply about identifying extreme values or choosing the most complex model.
+These findings illustrate how transportation data can provide useful context for understanding operational activity and interpreting unusual transactions.
 
-It requires understanding context, evaluating different approaches, and balancing the need to detect unusual activity with the practical cost of reviewing alerts.
+The anomaly detection analysis extended this investigation by comparing contextual rules with Isolation Forest. The results highlighted the trade-off between identifying more unusual journeys and reducing the number of alerts requiring review.
 
-The project demonstrates an analytical approach that could be adapted and further evaluated for real-world transportation operations and other event-monitoring applications.
+An important lesson from the project is that effective monitoring is not simply about identifying extreme values or choosing the most complex model.
+
+It requires understanding the context behind the data, evaluating different approaches, and recognizing the limitations of automated detection.
+
+By combining exploratory analysis with anomaly detection, the project demonstrates an analytical approach that could be further evaluated for real-world transportation operations and other event-monitoring applications.
+
+---
+
+## Author
+
+Developed as a portfolio project using Python, PySpark, Databricks, Delta Lake, and machine learning.
+
+**GitHub:** [RitaAse](https://github.com/RitaAse)
+
+**LinkedIn:** [Rita Asemota](https://www.linkedin.com/in/rita-asemota/)
