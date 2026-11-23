@@ -165,12 +165,44 @@ Two important measures were used:
 | Both Methods Agree | 426 | 50.70% | 34.34% |
 
 
+### Model Performance Comparison
+
+The chart below compares the detection methods using
+precision, recall, and F1-score.
+
+![Anomaly detection model performance comparison](Visuals/model_performance.png)
+
+*Figure 1: Performance comparison of the anomaly detection methods.*
+
 
 Isolation Forest performed slightly better at the selected alert threshold.
 
 However, the contextual rule-based approach achieved better overall ranking performance when evaluated across different thresholds.
 
 Neither method was consistently better at identifying every type of unusual journey.
+
+
+### Which Types of Unusual Trips Were Harder to Detect?
+
+The detection methods performed differently depending on
+the type of unusual journey.
+
+Both methods were relatively effective at identifying
+unusual fares compared with trip distance.
+
+However, some unusual journey-duration patterns were
+more difficult to detect. Unusual tipping patterns were
+particularly challenging for the contextual rules.
+
+![Detection performance by unusual trip scenario](Visuals/scenario-recall.png)
+
+*Figure 2: Percentage of unusual scenarios detected by each method.*
+
+These findings show why overall model performance alone
+is not enough. A method may perform reasonably well
+overall while still missing specific types of unusual
+activity.
+
 
 ### What Do These Results Mean for a Business?
 
