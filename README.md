@@ -90,14 +90,54 @@ The models were developed without using the dataset's preassigned unusual-trip l
 
 ## 5. Key Findings and Business Implications
 
-### A. Journey Efficiency Varies by Time of Day
 
-The simulated dataset showed slower journeys and longer travel durations during morning and evening peak periods.
+### A. Travel Activity and Journey Efficiency
 
-For example, median speeds were approximately:
-- Off-peak: 21 km/h
-- Morning peak: 16.1 km/h
-- Evening peak: 16.1 km/h
+**Business question:** How does travel activity change throughout
+the day, and what could this mean for transportation operations?
+
+#### Key Findings
+
+Analysis of 120,000 simulated journeys revealed that:
+
+- Hourly trip volumes remained relatively stable, with each
+  hour accounting for approximately 4.09%–4.28% of journeys.
+- Morning peak journeys took approximately 31.6% longer
+  than off-peak journeys.
+- Evening peak journeys took approximately 29.8% longer
+  than off-peak journeys.
+- Average travel speeds were approximately 24% lower
+  during peak periods, despite similar trip distances.
+
+#### Travel Activity by Hour
+
+![Hourly trip activity](Visuals/hourly_trip_activity.png)
+
+*Figure 1: Number of journeys recorded across different hours.*
+
+#### Journey Speed by Time of Day
+
+![Average journey speed](Visuals/hourly_journey_speed.png)
+
+*Figure 2: Average journey speed across different hours.*
+
+#### What Does This Mean for Transportation Companies?
+
+The findings suggest that journey duration can vary
+considerably even when the distance travelled remains similar.
+
+For transportation companies, analysing these differences
+could support:
+
+- More realistic journey-time estimates.
+- Better planning around periods of slower travel.
+- Investigation of factors affecting service efficiency.
+- More meaningful comparisons of driver and journey performance.
+
+**Important:** These are simulated travel patterns.
+The dataset reflects peak-period congestion but does not
+show actual increases in trip demand during commuting hours.
+
 
 **Potential business value:**
 
@@ -105,13 +145,105 @@ Transportation companies could use similar analysis of real journey data to inve
 
 The analysis also demonstrates why expected travel conditions should be considered when investigating unusual trips.
 
-### B. Travel Activity Is Concentrated Around Key Locations
 
-The Central Business District and Central Station accounted for approximately 23% of recorded pickups.
+### B. Location and Route Intelligence
 
-The most frequently recorded route was Central Station to the Central Business District, with 2,563 journeys.
+**Business question:** Which locations and routes account
+for the most journeys, and how could this information
+support transportation planning?
 
-The analysis also identified directional differences between incoming and outgoing trips at several locations.
+#### 1. Where Do Most Journeys Begin?
+
+![Top pickup locations](Visuals/top_pickup_locations.png)
+
+*Figure 3: Most frequently recorded pickup locations.*
+
+**Key findings**
+
+- The Central Business District (CBD) recorded 15,544
+  pickups, representing approximately 13% of all trips.
+- Central Station recorded 12,042 pickups, accounting
+  for approximately 10%.
+- Together, these two locations accounted for nearly
+  23% of all recorded pickups.
+
+**Business implications**
+
+Understanding where journeys originate could help
+transportation operators identify important service areas,
+investigate demand concentration, and inform decisions
+about vehicle positioning.
+
+However, pickup activity alone does not establish how
+many vehicles are available in each location.
+
+#### 2. Which Routes Are Most Frequently Travelled?
+
+![Top 15 travel routes](Visuals/top_15_routes.png)
+
+*Figure 4: The 15 most frequently recorded origin-destination routes.*
+
+**Key findings**
+
+- Central Station to CBD was the most frequently recorded
+  route, with 2,563 journeys.
+- Airport to CBD followed with 2,234 journeys.
+- Travel activity was particularly concentrated around
+  the CBD, Central Station, and Airport.
+
+**Business implications**
+
+Identifying frequently travelled routes could help
+operators understand important transport corridors,
+investigate route performance, and consider where
+service improvements may be valuable.
+
+#### 3. How Does Travel Activity Vary Between Locations?
+
+![Origin-destination heatmap](Visuals/origin_destination_heatmap.png)
+
+*Figure 5: Journey volumes between pickup and drop-off locations.*
+
+The heatmap provides a broader view of travel connections,
+including routes outside the 15 busiest.
+
+**Key findings**
+
+- The CBD and Central Station appear prominently across
+  several origin-destination connections.
+- Travel volumes differ depending on the direction
+  of the journey.
+- The CBD recorded 1,063 more incoming than outgoing
+  journeys, while Central Station recorded 642 more
+  outgoing than incoming journeys.
+
+**Business implications**
+
+Directional travel patterns could help operators investigate
+potential vehicle repositioning needs.
+
+For example, locations with consistently higher passenger
+drop-offs than pickups may warrant further investigation
+to understand whether vehicles are accumulating there.
+
+Actual repositioning decisions would require additional
+information about fleet availability, driver schedules,
+and vehicle movements.
+
+#### Overall Business Insight
+
+Location and route analysis can reveal more than where
+journeys occur.
+
+By examining pickup activity, popular routes, and
+directional differences together, transportation
+companies could gain a more complete understanding
+of how passengers move through their service areas.
+
+These findings demonstrate potential applications
+using simulated data, rather than measured improvements
+in real transportation operations.
+
 
 **Potential business value:**
 
