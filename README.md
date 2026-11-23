@@ -34,13 +34,14 @@ The project combines transportation analytics with anomaly detection to demonstr
 
 ## Databricks Workflow Demo
 
-This project was developed in **Databricks Free Edition**, using PySpark and Delta Lake for data preparation, feature engineering and exploratory analysis, alongside Python and scikit-learn for anomaly detection.
+This project was developed in **Databricks Free Edition**, using PySpark, Delta Lake, Python and scikit-learn.
 
-The short screen recording provides a look at the Databricks workspace, including journey analysis, feature engineering and anomaly detection.
+The demonstration shows parts of the analytical workflow, including exploratory data analysis, feature engineering and anomaly detection.
 
-**[▶ Watch the 35-second Databricks Demo](Demo/databricks-workflow-demo-comp.mp4)**
+![Databricks Workflow Demo](Demo/databricks-demo.gif)
 
-The complete workflow and results are documented in the [`Notebooks/`](Notebooks/) folder.
+The complete implementation and results are documented in the [`Notebooks/`](Notebooks/) folder.
+
 
 
 ## 2. Business Problem
